@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+import TextField from "@material-ui/core/TextField"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" 
+    style={{
+      display: "flex",  
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center"
+      }}>
+      <h1>CCL To DO APP!</h1>
+      <TextField 
+      id="outlined-basic" 
+      label="Write a Todo" 
+      style={{maxWidth: "300px", width: "90vw "}}
+      />
     </div>
   );
 }
